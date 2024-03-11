@@ -46,9 +46,9 @@ def move_files_based_on_transcript(transcript_file_path):
             destination_folder = get_destination_folder(transcript)
 
             if destination_folder: # Not None
-            	riginal_path = os.path.join(icg_dataset_folder, file_name)
-                destination_path = os.path.join(destination_folder, adjusted_file_name)
-                shutil.move(original_path, destination_path) # move the file to the destination_folder
+            	original_path = os.path.join(icg_dataset_folder, file_name)
+            	destination_path = os.path.join(destination_folder, adjusted_file_name)
+            	shutil.move(original_path, destination_path) # move the file to the destination_folder
 
 move_files_based_on_transcript(transcript_file_path)
 
