@@ -54,7 +54,6 @@ move_files_based_on_transcript(transcript_file_path)
 
 # (5) Resample all the files to 16000Hz
 for root, dirs, files in tqdm(os.walk(dataset_folder)):
-    destination_folder = "./data/check/Cannot_resample"
     for filename in files:
         if filename.endswith('.wav'):
             file_path = os.path.join(root, filename)
